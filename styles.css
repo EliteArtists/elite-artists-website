@@ -49,16 +49,12 @@ nav ul li a {
 }
 
 /* Hero Section */
-#hero {
-  background-image: url('hero.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero {
+  background-image: url("hero.jpg");
   background-size: cover;
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-position: center top;
+  padding-top: 180px;  /* Push image down */
+  padding-bottom: 120px;
   position: relative;
   z-index: 1;
 }
