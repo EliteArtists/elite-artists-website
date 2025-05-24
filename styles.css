@@ -309,7 +309,7 @@ body {
 }
 /* === Services Section Layout === */
 .services-wrapper {
-  margin-top: -900px; /* Adjust as needed */
+  margin-top: 100px; /* Adjust as needed */
   padding-top: 2rem;
 }
 
