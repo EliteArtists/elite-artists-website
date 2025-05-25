@@ -427,7 +427,7 @@ body {
   min-width: 300px;
 }
 .scrollable-content {
-  margin-top: 210px;
+  margin-top: 170px;
   position: relative;
   z-index: 1;
 }
