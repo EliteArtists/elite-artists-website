@@ -265,7 +265,7 @@ body {
   background-color: #fff;       /* Ensures clean white background */
   position: relative;
   z-index: 10;                  /* Stacks above hero */
-  margin-top: 2100px;           /* Pulls the white section upward */
+  margin-top: 100px;           /* Pulls the white section upward */
 }
 /* MARQUEE TICKER STYLES */
 .ticker-wrap {
