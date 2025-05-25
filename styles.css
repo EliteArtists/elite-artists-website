@@ -428,7 +428,6 @@ body {
 }
 .scrollable-content {
   margin-top: 210px;
-  padding-top: 210px; /* This creates the needed space */
   position: relative;
   z-index: 1;
 }
