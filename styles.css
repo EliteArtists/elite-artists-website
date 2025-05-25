@@ -24,7 +24,7 @@ header {
   align-items: center;
   padding: 1rem 0;
   border-bottom: none;
-  background-color: #000000; /* more see-through */
+  background-color: rgba(0, 0, 0, 0.3); /* 30% opacity */
   backdrop-filter: blur(6px); /* slightly stronger blur */
   position: fixed;
   top: 0;
