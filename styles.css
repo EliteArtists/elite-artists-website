@@ -428,7 +428,7 @@ body {
 }
 .scrollable-content {
   padding-top: 270px; /* creates the space inside */
-  margin-top: 0;       /* prevents white box shift */
+  margin-top: 100;       /* prevents white box shift */
   background-color: white; /* ensure background color if not already set */
   position: relative;
   z-index: 1;
