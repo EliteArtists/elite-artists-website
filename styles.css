@@ -54,7 +54,7 @@ nav ul li a {
   background-size: cover;
   background-position: center top;
   padding-top: 180px;  /* Push image down */
-  padding-bottom: 120px;
+  padding-bottom: 20px;
   position: relative;
   z-index: 1;
 }
