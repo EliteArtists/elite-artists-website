@@ -426,10 +426,15 @@ body {
   flex: 1;
   min-width: 300px;
 }
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
 .scrollable-content {
-  padding-top: 270px; /* creates the space inside */
-  margin-top: 300;       /* prevents white box shift */
-  background-color: white; /* ensure background color if not already set */
+  margin-top: 100vh;
+  background-color: white;
   position: relative;
   z-index: 1;
 }
