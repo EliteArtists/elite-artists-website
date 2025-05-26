@@ -427,7 +427,9 @@ body {
   min-width: 300px;
 }
 .scrollable-content {
-  margin-top: 170px;
+  padding-top: 170px; /* creates the space inside */
+  margin-top: 0;       /* prevents white box shift */
+  background-color: white; /* ensure background color if not already set */
   position: relative;
   z-index: 1;
 }
