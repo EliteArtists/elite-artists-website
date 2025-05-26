@@ -207,7 +207,7 @@ body {
 
 .logo img {
   height: 150px;        /* Make the logo taller */
-  margin-right: 2rem;
+  margin-right: auto;
   max-width: none;     /* Prevent it being squashed */
   width: auto;
 }
