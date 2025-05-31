@@ -107,83 +107,49 @@
   <h1>Jenny &amp; David</h1>
 
   <!-- Two Column Layout -->
-  <div class="container">
-    <!-- YouTube Videos -->
+  <main class="form-layout">
+  <div class="form-box">
     <div class="videos">
       <iframe
         src="https://www.youtube.com/embed/rgNG6-iYWKo"
         frameborder="0"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen>
+      </iframe>
       <iframe
-        src="https://www.youtube.com/watch?v=QPFZwry92j0"
+        src="https://www.youtube.com/embed/QPFZwry92j0"
         frameborder="0"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen>
+      </iframe>
     </div>
+  </div>
 
-    <!-- Booking Form -->
-    <div class="booking">
-    <!-- 1) Container around the form.  -->
-    <section class="contact-form"
-             style="background-color: #f9f9f9;
-                    padding: 40px 20px;
-                    border-radius: 8px;">
-      <!-- 2) The form itself with flex column & gap -->
-      <form action="https://formspro.site/your-endpoint" method="POST"
-            style="display: flex;
-                   flex-direction: column;
-                   gap: 20px;">
-        <!-- 3) Each input with padding/border-radius/border -->
-        <input type="text" name="venue"
-               placeholder="Venue Name" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+  <div class="form-text">
+    <section class="contact-form" style="background-color: #f9f9f9; padding: 40px 20px; border-radius: 8px;">
+      <h2>Book Jenny &amp; David</h2>
+      <form>
+        <label>Venue Name</label>
+        <input type="text" name="venue" placeholder="Venue Name" required />
 
-        <input type="tel" name="mobile"
-               placeholder="Contact Mobile Number" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+        <label>Contact Mobile Number</label>
+        <input type="tel" name="mobile" placeholder="Contact Mobile Number" required />
 
-        <input type="email" name="email"
-               placeholder="Contact Email Address" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+        <label>Contact Email Address</label>
+        <input type="email" name="email" placeholder="Contact Email Address" required />
 
-        <input type="text" name="name"
-               placeholder="Contact Name" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+        <label>Contact Name</label>
+        <input type="text" name="name" placeholder="Contact Name" required />
 
-        <input type="date" name="date"
-               placeholder="Gig Date" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+        <label>Gig Date</label>
+        <input type="date" name="date" placeholder="dd/mm/yyyy" required />
 
-        <input type="text" name="time"
-               placeholder="Time (Start & Finish)" required
-               style="padding: 12px;
-                      border-radius: 6px;
-                      border: 1px solid #ccc;" />
+        <label>Time (Start &amp; Finish)</label>
+        <input type="text" name="time" placeholder="Time (Start & Finish)" required />
 
-        <!-- 4) The submit button with matching style -->
-        <button type="submit"
-                style="background-color: #222;
-                       color: #fff;
-                       padding: 12px 20px;
-                       border: none;
-                       border-radius: 6px;
-                       cursor: pointer;">
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </div>
+</main>
 
   <!-- Biography -->
   <div class="biography">
