@@ -456,7 +456,7 @@ body {
 
 /* —— Adjust the EA logo inside that black circle —— */
 .hero-sticker .ea-logo {
-  max-width: 60%;      /* scale the logo down to ~60% of the circle’s width */
+  max-width: 90%;      /* scale the logo down to ~60% of the circle’s width */
   height: auto;
   object-fit: contain; /* preserve its aspect ratio */
 }
