@@ -441,20 +441,22 @@ body {
 }
 /* —— Black circle “sticker” that sits on top of the hero image —— */
 .hero-sticker {
+  position: absolute;
+  top: 20px;           /* or use “bottom: 20px;” if you prefer */
   right: 20px;
   width: 275px;
-  height: 275px;        /* circle height */
+  height: 275px;
   background-color: black;
-  border-radius: 50%;    /* makes it a perfect circle */
-  display: flex;         
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
-  align-items: center;   /* center anything inside (like the <img>) */
-  z-index: 10;           /* sit on top of the .hero background */
+  align-items: center;
+  z-index: 10;
 }
 
 /* —— Adjust the EA logo inside that black circle —— */
 .hero-sticker .ea-logo {
-  max-width: 60%;        /* scale the logo down to 60% of the circle’s width */
-  height: auto;          
-  object-fit: contain;   /* preserve its aspect ratio */
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
 }
