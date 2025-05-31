@@ -87,23 +87,6 @@ nav ul li a {
   padding: 1.5rem;
   z-index: 10;
 }
-.hero-sticker-jd {
-  position: absolute;
-  top: -30%;
-  right: 10%;
-  width: 275px;
-  height: 275px;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 1.5rem;
-  z-index: 10;
-}
 .hero-button {
   position: absolute;
   top: 120%;
