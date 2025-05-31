@@ -442,7 +442,7 @@ body {
 /* —— Black circle “sticker” that sits on top of the hero image —— */
 .hero-sticker {
   position: absolute;
-  bottom: 500px;           /* → hangs 60px below .hero’s bottom edge /
+  bottom: 2000px;           /* → hangs 60px below .hero’s bottom edge /
   right: 300px;         /* 20px in from the right edge */
   width: 175px;
   height: 175px;
