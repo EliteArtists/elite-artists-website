@@ -443,7 +443,7 @@ body {
 .hero-sticker {
   position: absolute;
   top: 650px;           /* → hangs 60px below .hero’s bottom edge /
-  right: 200px;         /* 20px in from the right edge */
+  right: 250px;         /* 20px in from the right edge */
   width: 175px;
   height: 175px;
   background-color: black;
