@@ -12,15 +12,13 @@
       color: #333;
     }
     .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url('jennyanddavid.jpg') center 30%/cover no-repeat;
-}
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('jennyanddavid.jpg') center 30%/cover no-repeat;
+    }
     .ea-logo {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
+      /* We will handle sizing/positioning in styles.css */
       width: 80px;
       height: auto;
     }
@@ -91,31 +89,40 @@
 <body>
 
   <!-- Hero Section -->
-<!-- Hero Section -->
-<div class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-sticker">
-    <img src="logo.png" alt="Elite Artists Logo" class="ea-logo" />
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-sticker">
+      <img src="logo.png" alt="Elite Artists Logo" class="ea-logo" />
+    </div>
   </div>
-</div>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/your-number" target="_blank" class="whatsapp-button">Chat With Us on WhatsApp</a>
+  <a href="https://wa.me/your-number" target="_blank" class="whatsapp-button">
+    Chat With Us on WhatsApp
+  </a>
 
   <!-- Musician's Name -->
-  <h1>Jenny & David</h1>
+  <h1>Jenny &amp; David</h1>
 
   <!-- Two Column Layout -->
   <div class="container">
     <!-- YouTube Videos -->
     <div class="videos">
-      <iframe src="https://www.youtube.com/embed/rgNG6-iYWKo" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/watch?v=QPFZwry92j0" frameborder="0" allowfullscreen></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/rgNG6-iYWKo"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="https://www.youtube.com/watch?v=QPFZwry92j0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
     </div>
 
     <!-- Booking Form -->
     <div class="booking">
-      <h2>Book Jenny & David</h2>
+      <h2>Book Jenny &amp; David</h2>
       <form>
         <label>Venue Name</label>
         <input type="text" name="venue" required />
@@ -127,7 +134,7 @@
         <input type="text" name="name" required />
         <label>Gig Date</label>
         <input type="date" name="date" required />
-        <label>Time (Start & Finish)</label>
+        <label>Time (Start &amp; Finish)</label>
         <input type="text" name="time" required />
         <button type="submit">Submit</button>
       </form>
@@ -137,14 +144,18 @@
   <!-- Biography -->
   <div class="biography">
     <h2>Biography</h2>
-    <p>Jenny & David are an acoustic duo renowned for their soulful harmonies and dynamic performances. Available for weddings, corporate events, and private functions.</p>
+    <p>
+      Jenny &amp; David are an acoustic duo renowned for their soulful harmonies
+      and dynamic performances. Available for weddings, corporate events, and
+      private functions.
+    </p>
   </div>
 
   <!-- Footer Images -->
   <div class="footer-images">
-    <img src="image1.jpg" alt="Jenny & David 1" />
-    <img src="image2.jpg" alt="Jenny & David 2" />
-    <img src="image3.jpg" alt="Jenny & David 3" />
+    <img src="image1.jpg" alt="Jenny &amp; David 1" />
+    <img src="image2.jpg" alt="Jenny &amp; David 2" />
+    <img src="image3.jpg" alt="Jenny &amp; David 3" />
   </div>
 
 </body>
