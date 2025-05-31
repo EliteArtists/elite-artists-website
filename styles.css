@@ -458,11 +458,9 @@ body {
 }
 /* —— Black circle “sticker” that sits on top of the hero image —— */
 .hero-sticker {
-  position: absolute;
-  bottom: 20px;          /* 20px up from the bottom of the screen */
-  right: 20px;           /* 20px in from the right edge */
-  width: 275px;          /* circle width */
-  height: 275px;         /* circle height */
+  right: 20px;
+  width: 275px;
+  height: 275px;        /* circle height */
   background-color: black;
   border-radius: 50%;    /* makes it a perfect circle */
   display: flex;         
