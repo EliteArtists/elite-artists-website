@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny & David | Elite Artists</title>
+  <style>
+    /* Basic styles to get you going! */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background: url('hero.jpg') center/cover no-repeat;
+    }
+    .ea-logo {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: auto;
+    }
+    .whatsapp-button {
+      display: block;
+      width: 220px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      text-align: center;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .videos, .booking {
+      flex: 1;
+    }
+    .videos iframe {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    .booking form {
+      display: flex;
+      flex-direction: column;
+    }
+    .booking label {
+      margin: 10px 0 5px;
+    }
+    .booking input {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    .biography {
+      text-align: center;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .footer-images {
+      display: flex;
+      gap: 10px;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+    .footer-images img {
+      flex: 1;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="logo.png" alt="EA Logo" class="ea-logo" />
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/your-number" target="_blank" class="whatsapp-button">Chat With Us on WhatsApp</a>
+
+  <!-- Musician's Name -->
+  <h1>Jenny & David</h1>
+
+  <!-- Two Column Layout -->
+  <div class="container">
+    <!-- YouTube Videos -->
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/video3" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking">
+      <h2>Book Jenny & David</h2>
+      <form>
+        <label>Venue Name</label>
+        <input type="text" name="venue" required />
+        <label>Contact Mobile Number</label>
+        <input type="tel" name="mobile" required />
+        <label>Contact Email Address</label>
+        <input type="email" name="email" required />
+        <label>Contact Name</label>
+        <input type="text" name="name" required />
+        <label>Gig Date</label>
+        <input type="date" name="date" required />
+        <label>Time (Start & Finish)</label>
+        <input type="text" name="time" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Biography -->
+  <div class="biography">
+    <h2>Biography</h2>
+    <p>Jenny & David are an acoustic duo renowned for their soulful harmonies and dynamic performances. Available for weddings, corporate events, and private functions.</p>
+  </div>
+
+  <!-- Footer Images -->
+  <div class="footer-images">
+    <img src="image1.jpg" alt="Jenny & David 1" />
+    <img src="image2.jpg" alt="Jenny & David 2" />
+    <img src="image3.jpg" alt="Jenny & David 3" />
+  </div>
+
+</body>
+</html>
