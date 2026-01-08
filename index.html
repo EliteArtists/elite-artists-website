@@ -125,17 +125,52 @@
 </dialog>
 
     <script>
-        const modal = document.getElementById('auditionModal');
-        const openBtn = document.getElementById('openAudition');
-        const closeBtn = document.getElementById('closeAudition');
+        // Get Modal Elements
+const auditionModal = document.getElementById('auditionModal');
+const contactModal = document.getElementById('contactModal');
 
-        openBtn.onclick = () => modal.showModal();
-        closeBtn.onclick = () => modal.close();
+// Get Trigger Buttons
+const openAuditionBtn = document.getElementById('openAudition');
+const openContactBtn = document.getElementById('openContact');
 
-        // Close modal if user clicks outside of it
-        modal.onclick = (event) => {
-            if (event.target === modal) modal.close();
-        };
+// Get Close Buttons
+const closeAuditionBtn = document.getElementById('closeAudition');
+const closeContactBtn = document.getElementById('closeContact');
+
+// Audition Modal Logic
+openAuditionBtn.onclick = () => auditionModal.showModal();
+closeAuditionBtn.onclick = () => auditionModal.close();
+
+// Contact Modal Logic (prevents page jump)
+openContactBtn.onclick = (e) => {
+    e.preventDefault();
+    contactModal.showModal();
+};
+closeContactBtn.onclick = () => contactModal.close();
+
+// Close on outside click for both modals
+window.onclick = (event) => {
+    if (event.target === auditionModal) auditionModal.close();
+    if (event.target === contactModal) contactModal.close();
+};
+
+// Automatic Form Reset after "Submit"
+const handleFormSubmit = (formId, modalElement) => {
+    const form = document.getElementById(formId);
+    form.onsubmit = (e) => {
+        e.preventDefault();
+        
+        // This is where you'd normally send data to your backend
+        alert("Thank you! Your request has been sent.");
+        
+        form.reset();         // Clears all fields
+        modalElement.close(); // Closes the pop-up
+    };
+};
+
+// Apply reset logic to both forms
+handleFormSubmit('auditionForm', auditionModal);
+handleFormSubmit('contactForm', contactModal);
     </script>
 </body>
 </html>
