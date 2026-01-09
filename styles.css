@@ -187,3 +187,42 @@ h1 {
 }
 
 .full-width { width: 100%; cursor: pointer; }
+
+/* --- Navigation CTA Button --- */
+.btn-nav-cta {
+    background: transparent;
+    border: 1px solid var(--primary-gold);
+    color: var(--primary-gold);
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: var(--transition);
+}
+
+.btn-nav-cta:hover {
+    background: var(--primary-gold);
+    color: #000;
+}
+
+/* --- Hero Store Icon Alignment --- */
+.hero-store-align {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.store-btn img {
+    height: 50px; /* Matching the size from your app.html */
+    width: auto;
+    display: block;
+}
+
+/* Ensure icons are centered on mobile */
+@media (max-width: 768px) {
+    .hero-store-align {
+        justify-content: center;
+    }
+}
