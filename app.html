@@ -8,66 +8,52 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .app-showcase {
-            padding: 140px 0 80px;
+            padding: 120px 0 60px; /* Reduced top padding since text is gone */
             background-color: var(--bg-dark);
             text-align: center;
         }
 
         .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
+            display: flex;
+            gap: 30px;
+            justify-content: center; /* Centers the smaller images */
             align-items: start;
+            flex-wrap: wrap; /* Allows stacking on mobile */
         }
 
         .app-frame {
             background: #000;
-            padding: 15px;
-            border-radius: 40px;
-            border: 8px solid #1a1a1a;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            padding: 10px;
+            border-radius: 30px;
+            border: 6px solid #1a1a1a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
             transition: var(--transition);
+            /* 2) Setting the width to make images smaller */
+            width: 280px; 
         }
 
         .app-frame:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             border-color: var(--primary-gold);
         }
 
         .app-img {
             width: 100%;
             height: auto;
-            border-radius: 25px;
+            border-radius: 20px;
             display: block;
-        }
-
-        .app-intro h2 {
-            font-family: var(--font-heading);
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .app-intro p {
-            color: var(--text-dim);
-            max-width: 600px;
-            margin: 0 auto 40px;
         }
 
         .store-badges {
             display: flex;
             gap: 20px;
             justify-content: center;
-            margin-top: 60px;
+            margin-top: 50px;
         }
 
         .store-badges img {
-            height: 50px;
+            height: 45px;
             transition: var(--transition);
-        }
-
-        .store-badges img:hover {
-            transform: scale(1.05);
         }
     </style>
 </head>
@@ -90,11 +76,6 @@
 
     <main class="app-showcase">
         <div class="container">
-            <div class="app-intro">
-                <h2>Elite Artists Mobile</h2>
-                <p>Professional music management, availability tracking, and booking—refined for the palm of your hand.</p>
-            </div>
-
             <div class="showcase-grid">
                 <div class="app-frame">
                     <img src="app-screen-1.jpg" alt="App Dashboard" class="app-img">
@@ -122,10 +103,6 @@
             <div class="modal-header">
                 <h3>Contact Us</h3>
                 <button id="closeContact" class="close-btn">&times;</button>
-            </div>
-            <div class="contact-info" style="margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 20px;">
-                <p style="color: var(--primary-gold); font-weight: 600; margin-bottom: 5px;">admin@elite-artists.com / 07931 000 168</p>
-                <p style="font-size: 0.85rem; color: var(--text-dim);">124 City Road, London, EC1V 2NX</p>
             </div>
             <form id="contactForm">
                 <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
