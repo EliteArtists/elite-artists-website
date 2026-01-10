@@ -119,58 +119,65 @@
     </header>
 
     <main>
-        <section class="artist-hero">
-            <div class="container artist-header">
-                <h1>Jenny & David</h1>
-            </div>
-        </section>
+    <section class="artist-hero">
+        <div class="container artist-header">
+            <h1>Jenny & David</h1>
+        </div>
+    </section>
 
-        <div class="container profile-container">
-            <div class="main-content">
-                <section class="bio-section">
-                    <h2>The Story</h2>
-                    <p class="bio-text">
-                        Jenny & David are a premier acoustic duo based in London, specializing in soulful interpretations of modern hits and timeless classics. With over 10 years of international performance experience, they bring a sophisticated atmosphere to any high-end venue.
-                    </p>
-                </section>
+    <div class="container" style="padding-top: 20px;">
+        <button id="openInquiryMain" class="btn-primary" style="width: auto; padding: 15px 40px;">Check Availability</button>
+    </div>
 
-                <section class="video-section">
-                    <h2>Performances</h2>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <div class="container profile-container">
+        <div class="main-content">
+            <section class="bio-section">
+                <h2>The Story</h2>
+                <p class="bio-text">
+                    Jenny & David are a premier acoustic duo based in London...
+                </p>
+            </section>
+
+            <section class="video-scroll-wrapper">
+                <div class="video-flex-container">
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h4>Band Size</h4>
+                <p class="band-size-tag">Acoustic Duo</p>
+                <p style="font-size: 0.8rem; color: var(--text-dim);">Vocals & Acoustic Guitar</p>
             </div>
 
-            <aside class="sidebar">
-                <div class="sidebar-card">
-                    <h4>Band Size</h4>
-                    <p class="band-size-tag">Acoustic Duo</p>
-                    <p style="font-size: 0.8rem; color: var(--text-dim);">Vocals & Acoustic Guitar</p>
-                </div>
-
-                <div class="sidebar-card">
-                    <h4>Upcoming Gigs</h4>
-                    <ul class="calendar-list">
-                        <li class="calendar-item">
-                            <span class="calendar-date">14 Jan</span>
-                            <span class="calendar-loc">The Trafalgar Tavern</span>
-                        </li>
-                        <li class="calendar-item">
-                            <span class="calendar-date">22 Jan</span>
-                            <span class="calendar-date">The Gregorian</span>
-                        </li>
-                        <li class="calendar-item">
-                            <span class="calendar-date">05 Feb</span>
-                            <span class="calendar-loc">Tower Bridge Arms</span>
-                        </li>
+            <div class="sidebar-card">
+                <h4>Upcoming Gigs</h4>
+                <ul class="calendar-list">
+                    <li class="calendar-item">
+                        <span class="calendar-date">14 Jan</span>
+                        <span class="calendar-loc">The Trafalgar Tavern</span>
+                    </li>
                     </ul>
-                </div>
-
-                <button id="openInquiryMobile" class="btn-primary full-width" style="margin-top: 20px;">Check Availability</button>
-            </aside>
-        </div>
-    </main>
+            </div>
+        </aside>
+    </div>
+</main>
 
     <dialog id="inquiryModal" class="modal">
         <div class="modal-content">
