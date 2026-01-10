@@ -226,3 +226,36 @@ h1 {
         justify-content: center;
     }
 }
+
+/* 1. Reduce Hero Height */
+.artist-hero {
+    height: 45vh; /* Lowered from 60vh */
+    padding-bottom: 40px;
+}
+
+/* 3. Horizontal Video Scroll */
+.video-scroll-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.video-flex-container {
+    display: flex;
+    gap: 20px;
+    /* This ensures two videos fit per "view" roughly */
+}
+
+.video-card {
+    min-width: calc(50% - 10px); /* Sets width to roughly half */
+    flex: 0 0 auto;
+}
+
+/* Custom Scrollbar for better UX */
+.video-scroll-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.video-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: var(--primary-gold);
+    border-radius: 10px;
+}
