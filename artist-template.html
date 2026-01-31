@@ -234,24 +234,51 @@
 </dialog>
 
     <script>
-        const modal = document.getElementById('inquiryModal');
-        const openBtn = document.getElementById('openInquiry');
-        const openBtnMobile = document.getElementById('openInquiryMobile');
-        const closeBtn = document.getElementById('closeInquiry');
+    // Get Modal Elements
+    const inquiryModal = document.getElementById('inquiryModal');
+    const contactModal = document.getElementById('contactModal');
 
-        const toggleModal = (e) => { if(e) e.preventDefault(); modal.showModal(); };
+    // Get Trigger Buttons
+    const openInquiryBtn = document.getElementById('openInquiry');
+    const openInquiryMainBtn = document.getElementById('openInquiryMain');
+    const openContactBtn = document.getElementById('openContact');
 
-        openBtn.onclick = toggleModal;
-        openBtnMobile.onclick = toggleModal;
-        closeBtn.onclick = () => modal.close();
-        window.onclick = (event) => { if (event.target === modal) modal.close(); };
+    // Get Close Buttons
+    const closeInquiryBtn = document.getElementById('closeInquiry');
+    const closeContactBtn = document.getElementById('closeContact');
 
-        document.getElementById('inquiryForm').onsubmit = (e) => {
+    // --- Inquiry Modal Logic ---
+    const toggleInquiry = (e) => { if(e) e.preventDefault(); inquiryModal.showModal(); };
+    if(openInquiryBtn) openInquiryBtn.onclick = toggleInquiry;
+    if(openInquiryMainBtn) openInquiryMainBtn.onclick = toggleInquiry;
+    closeInquiryBtn.onclick = () => inquiryModal.close();
+
+    // --- Contact Modal Logic ---
+    openContactBtn.onclick = (e) => {
+        e.preventDefault();
+        contactModal.showModal();
+    };
+    closeContactBtn.onclick = () => contactModal.close();
+
+    // --- Global Close Logic (Outside Click) ---
+    window.onclick = (event) => {
+        if (event.target === inquiryModal) inquiryModal.close();
+        if (event.target === contactModal) contactModal.close();
+    };
+
+    // --- Form Submission & Reset Logic ---
+    const handleFormSubmit = (formId, modalElement, successMsg) => {
+        const form = document.getElementById(formId);
+        if(!form) return;
+        
+        form.onsubmit = (e) => {
             e.preventDefault();
-            alert("Thank you! We will check the artist's availability and get back to you shortly.");
-            modal.close();
-            e.target.reset();
+            alert(successMsg);
+            form.reset();         // Clears the fields
+            modalElement.close(); // Closes the popup
         };
-    </script>
-</body>
-</html>
+    };
+
+    handleFormSubmit('inquiryForm', inquiryModal, "Thank you! We will check the artist's availability and get back to you shortly.");
+    handleFormSubmit('contactForm', contactModal, "Thank you! Your message has been sent to the Elite Artists team.");
+</script>
