@@ -99,15 +99,17 @@
             .profile-container { grid-template-columns: 1fr; }
             .artist-hero { height: 40vh; }
         }
+
+        /* Force the navigation to the right-hand side */
+        .header-flex {
+            justify-content: flex-end;
+        }
     </style>
 </head>
 <body>
 
     <header class="site-header">
         <div class="container header-flex">
-            <div class="logo">
-                <a href="index.html"><img src="logo.png" alt="Elite Artists Logo" class="brand-logo"></a>
-            </div>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
