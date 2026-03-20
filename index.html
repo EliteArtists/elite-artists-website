@@ -134,7 +134,6 @@
             </div>
             <button type="submit" class="btn-primary full-width">Send Message</button>
         </form>
-    </div>
 </dialog>
 
     <script>
@@ -186,7 +185,7 @@ const handleFormSubmit = (formId, modalElement) => {
 
                 emailjs.sendForm('service_t5l9u72', templateId, form)
                     .then(() => {
-                        alert("Thank you! Your message has been sent to Elite Artists.");
+                        alert("Thank you! Your message has been sent to Sunday SouLounge.");
                         form.reset();
                         modalElement.close();
                         btn.innerText = originalText;
