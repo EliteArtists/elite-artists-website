@@ -169,17 +169,33 @@ window.onclick = (event) => {
 
 // Automatic Form Reset after "Submit"
 const handleFormSubmit = (formId, modalElement) => {
-    const form = document.getElementById(formId);
-    form.onsubmit = (e) => {
-        e.preventDefault();
-        
-        // This is where you'd normally send data to your backend
-        alert("Thank you! Your request has been sent.");
-        
-        form.reset();         // Clears all fields
-        modalElement.close(); // Closes the pop-up
-    };
-};
+            const form = document.getElementById(formId);
+            
+            form.onsubmit = (e) => {
+                e.preventDefault();
+                
+                // Change button text to show it's sending
+                const btn = form.querySelector('button');
+                const originalText = btn.innerText;
+                btn.innerText = "Sending...";
+
+                // Decide which template to use based on the form ID
+                const templateId = (formId === 'auditionForm') 
+                    ? 'template_kyaxvm3' 
+                    : 'template_frlua2t';
+
+                emailjs.sendForm('service_t5l9u72', templateId, form)
+                    .then(() => {
+                        alert("Thank you! Your message has been sent to Elite Artists.");
+                        form.reset();
+                        modalElement.close();
+                        btn.innerText = originalText;
+                    }, (error) => {
+                        alert("Oops! Something went wrong. Please try again.");
+                        btn.innerText = originalText;
+                    });
+            };
+        };
 
 // Apply reset logic to both forms
 handleFormSubmit('auditionForm', auditionModal);
